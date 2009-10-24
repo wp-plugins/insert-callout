@@ -1,4 +1,4 @@
-=== Feed Layout ===
+=== Insert Callout ===
 Tags: feed, layout, theme, adsense, page, ads
 Requires at least: 2.7
 Tested up to: 2.8.5
