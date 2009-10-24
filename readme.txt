@@ -2,7 +2,7 @@
 Tags: feed, layout, theme, adsense, page, ads
 Requires at least: 2.7
 Tested up to: 2.8.5
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 Donate link: http://www.componentoriented.com/wordpress/donate
 Contributors: D. Lambert
 
@@ -32,7 +32,9 @@ You can see it live at http://blog.componentoriented.com
 == History ==
 	
 Version 1.0
-	- first release
+	- First release
+Version 1.0.1
+	- Fix name in readme.txt
 
 == Frequently Asked Questions ==
 
