@@ -1,8 +1,8 @@
 === Insert Callout ===
-Tags: feed, layout, theme, adsense, page, ads
+Tags: callout, pullquote, pull-quote, layout, theme
 Requires at least: 2.7
 Tested up to: 2.8.5
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 Donate link: http://www.componentoriented.com/wordpress/donate
 Contributors: D. Lambert
 
@@ -35,7 +35,9 @@ Version 1.0
 	- First release
 Version 1.0.1
 	- Fix name in readme.txt
-
+Version 1.0.2
+	- Fix "do not have sufficient permissions" error on admin page.
+	
 == Frequently Asked Questions ==
 
 No questions have been asked.

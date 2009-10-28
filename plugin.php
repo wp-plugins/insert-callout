@@ -3,7 +3,7 @@
 Plugin Name: Insert Callout
 Plugin URI: http://componentoriented.com/wordpress/insert-callout
 Description: Add a callout box in a post.
-Version: 1.0.1
+Version: 1.0.2
 Author: D. Lambert
 Author URI: http://blog.componentoriented.com
 Disclaimer: Use at your own risk. No warranty expressed or implied is provided.
@@ -85,8 +85,8 @@ function callout_post($the_content)
 
 }
 
-add_action('admin_head', 'callout_admin_head');
-function callout_admin_head()
+add_action('admin_menu', 'callout_admin_menu');
+function callout_admin_menu()
 {
     add_options_page('Insert Callout', 'Insert Callout', 'manage_options', 'insert-callout/options.php');
 }
