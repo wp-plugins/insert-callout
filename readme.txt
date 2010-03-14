@@ -1,8 +1,8 @@
 === Insert Callout ===
 Tags: callout, pullquote, pull-quote, layout, theme
 Requires at least: 2.7
-Tested up to: 2.8.5
-Stable tag: 1.0.2
+Tested up to: 2.9.2
+Stable tag: 1.0.3
 Donate link: http://www.componentoriented.com/wordpress/donate
 Contributors: D. Lambert
 
@@ -20,7 +20,7 @@ in the settings page, and then create a new callout box like this:
 
 [callout title="A demo callout."]Callout content here.[/callout]
 
-You can see it live at http://blog.componentoriented.com
+You can see it live at http://componentoriented.com/wordpress/insert-callout
 
 
 == Installation ==
@@ -37,7 +37,11 @@ Version 1.0.1
 	- Fix name in readme.txt
 Version 1.0.2
 	- Fix "do not have sufficient permissions" error on admin page.
-	
+Version 1.0.3
+	- Plugin processing reworked to use regex.
+	- Allow multiple callouts per post.
+	- Add syntax hint on edit page.
+	- Default a style to settings page.
 == Frequently Asked Questions ==
 
 No questions have been asked.

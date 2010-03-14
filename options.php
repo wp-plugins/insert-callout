@@ -1,4 +1,17 @@
 <?php
+
+function get_default_options()
+{
+	$d_options['callout_style'] ='padding: 2px; margin: 1em 1.5em 1em 0.5em; ' .
+	                             'background: #FFEC9B none repeat scroll 0% 0%; ' .
+								 'border: solid; border-width: thin; border-color: #AE9F44; ' .
+								 'display: block; float: left; width: 20em;';
+    $d_options['callout_title_style'] = 'padding: 5px; color: #0037A3; ' .
+										'font-weight: bold; font-size: 9pt;';
+    $d_options['callout_body_style'] = 'background: #FEFFF7; padding: 0.5em; color: #0062A8;';
+    return $d_options;
+}
+
 function callout_request($name, $default=null)
 {
     if (!isset($_REQUEST[$name])) return $default;
@@ -57,7 +70,7 @@ if (isset($_POST['save']))
 }
 else
 {
-    $options = get_option('calloutopts');
+    $options = get_option('calloutopts', get_default_options());
 }
 ?>
 <div class="wrap">
