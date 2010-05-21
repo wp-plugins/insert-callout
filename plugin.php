@@ -3,13 +3,13 @@
 Plugin Name: Insert Callout
 Plugin URI: http://componentoriented.com/wordpress/insert-callout
 Description: Add a callout box in a post.
-Version: 1.0.3
+Version: 1.0.4
 Author: D. Lambert
 Author URI: http://blog.componentoriented.com
 Disclaimer: Use at your own risk. No warranty expressed or implied is provided.
 */
 
-/*	Copyright 2009  Component Oriented  (email : dlambert@componentoriented.com)
+/*	Copyright 2010  Component Oriented  (email : dlambert@componentoriented.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -37,12 +37,18 @@ add_filter('the_content', 'callout_post');
 
 function callout_post($the_content)
 {
+    //echo '[';
+    //echo $the_content;
+    //echo ']';
    
-    preg_match_all("/\[callout.*\/callout\]/i",
+    preg_match_all("/\[callout.*\[\/callout\]/isU",
     $the_content, $match, PREG_PATTERN_ORDER);
 	
 	foreach($match[0] as $value)
         {
+        	//echo 'match:[';
+        	//echo $value;
+        	//echo ']';
         	$startpos = strpos($the_content, $value);
         	$endpos = $startpos + strlen($value);
         	$callout = build_callout($value);

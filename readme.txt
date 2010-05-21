@@ -2,7 +2,7 @@
 Tags: callout, pullquote, pull-quote, layout, theme
 Requires at least: 2.7
 Tested up to: 2.9.2
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 Donate link: http://www.componentoriented.com/wordpress/donate
 Contributors: D. Lambert
 
@@ -42,6 +42,8 @@ Version 1.0.3
 	- Allow multiple callouts per post.
 	- Add syntax hint on edit page.
 	- Default a style to settings page.
+Version 1.0.4
+	- Fixed: Line breaks within a callout caused it to not be processed.
 == Frequently Asked Questions ==
 
 No questions have been asked.
